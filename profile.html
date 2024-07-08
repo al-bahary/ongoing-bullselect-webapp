@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bull Select - Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <img src="path/to/logo.png" alt="Bull Select Logo" class="logo">
+            <h2>Hi there,</h2>
+            <p>Get Started with Bull Select.</p>
+            <form id="registrationForm">
+                <div class="input-group">
+                    <i class="fa fa-user"></i>
+                    <input type="text" id="name" placeholder="Full name" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email address" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa fa-phone"></i>
+                    <input type="tel" id="phone" placeholder="Phone number" required>
+                </div>
+                <div class="input-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="occupation">Occupation:</label>
+                    <select id="occupation" required>
+                        <option value="farmer">Farmer</option>
+                        <option value="service-provider">Service Provider</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="county">County:</label>
+                    <select id="county" required>
+                        <!-- Add counties here -->
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="region">Region:</label>
+                    <select id="region" required>
+                        <!-- Add regions based on the selected county -->
+                    </select>
+                </div>
+                <div class="consent">
+                    <label><input type="checkbox" required> I consent to receive treatment for my health condition.</label>
+                    <label><input type="checkbox"> I consent to the use and disclosure of my health information for treatment purposes.</label>
+                    <label><input type="checkbox" required> I acknowledge that I have reviewed and agree to the privacy policy.</label>
+                </div>
+                <button type="submit" class="btn">Get Started</button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="path/to/cow-image.jpg" alt="Cow">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
